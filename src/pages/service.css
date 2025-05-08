@@ -1,0 +1,107 @@
+
+/* about hero section */
+
+
+.homehero3{
+    display: flex;
+    flex-direction: row;
+    padding: 0em 0em;
+    padding-top: 4em;
+    /* place-items: center; */
+    background-color: rgb(21, 3, 3);
+
+    color: white;
+    margin-bottom: 9em;
+
+}
+
+.homehero-image2{
+    flex: 1;
+  background-image: url('../assets//hero2.jpg.webp');
+  /* background-image: url('./assets/hero-img.jpg'); */
+    /* background-size: cover; */
+    /* background-size: top; */
+    width: 100%;
+    /* background-size: center; */
+    background-size: cover;
+    /* background-position: top; */
+  
+  }
+  
+  .homeheros-content2 h1{
+    font-family: "Chivo", sans-serif;
+    line-height: 1;
+    color: #fff;
+    /* font-size: 34px; */
+    /* margin-bottom: 25px; */
+    align-items: center;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    display: block;
+  }
+
+
+  .homehero-content-one2{
+    padding: 1em 8em;
+    /* margin-top: 11em; */
+  }
+
+  .homeheros-content2{
+    padding: 8em 10em;
+    place-content: center;
+  }
+
+  
+
+
+
+
+
+  
+  @media (max-width:432px) {
+
+    .homehero2{
+      display: flex;
+      flex-direction: column;
+   }
+      
+    .homeheros-content2{
+      padding: 10em 0em;
+    }
+  
+    .homehero-image2{
+      display: none;
+   }
+  
+  
+  .homehero-content-one2{
+    padding: 1em;
+  }
+  
+  
+  /* .homeheros-content1 h1{
+    font-size: 19px;
+  } */
+  
+  
+    }
+  
+  
+  
+  
+    @media (max-width:820px) {
+      .homehero3{
+          display: flex;
+          flex-direction: column;
+      }
+  
+      .homehero-image2{
+          display: none;
+      }
+  
+      .homeheros-content2{
+          padding: 10em 0em;
+      }
+    }
