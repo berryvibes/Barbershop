@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./Contact.css"; 
-import { FaHome, FaMobileAlt, FaEnvelope } from 'react-icons/fa';
+import "./Contact.css";
+import { FaHome, FaMobileAlt, FaEnvelope } from "react-icons/fa";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -23,10 +23,10 @@ const ContactSection = () => {
   return (
     <>
       {/* first section */}
-      <section className="blogs-section">
-        <div className="blogs-container">
-          <div className="blogs-content-one">
-            <div className="blogs-content">
+      <section className="blogs-section5">
+        <div className="blogs-container5">
+          <div className="blogs-content-one5">
+            <div className="blogs-content5">
               <h1>Contact</h1>
             </div>
           </div>
@@ -34,6 +34,28 @@ const ContactSection = () => {
         </div>
       </section>
       {/* end of first section */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <section className="contact-section">
         <div className="contact-container">
@@ -70,49 +92,48 @@ const ContactSection = () => {
               </div>
 
               <div className="form-group">
-              <input
-                type="text"
-                name="subject"
-                placeholder="Enter Subject"
-                value={formData.subject}
-                onChange={handleChange}
-                required
-              />
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Enter Subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  required
+                />
               </div>
 
-              <button type="submit">Send </button>
+              <button type="submit" className="btn">Send </button>
             </form>
           </div>
 
 
 
-
           {/* Contact Information Panel */}
           <div className="contact-info-box">
-      <div className="info-item">
-        <FaHome className="icon" />
-        <div>
-          <strong>Buttonwood, California.</strong>
-          <p>Rosemead, CA 91770</p>
-        </div>
-      </div>
+            <div className="info-item">
+              <FaHome className="icon" />
+              <div>
+                <strong>Buttonwood, California.</strong>
+                <p>Rosemead, CA 91770</p>
+              </div>
+            </div>
 
-      <div className="info-item">
-        <FaMobileAlt className="icon" />
-        <div>
-          <strong>+1 253 565 2365</strong>
-          <p>Mon to Fri 9am to 6pm</p>
-        </div>
-      </div>
+            <div className="info-item">
+              <FaMobileAlt className="icon" />
+              <div>
+                <strong>+1 253 565 2365</strong>
+                <p>Mon to Fri 9am to 6pm</p>
+              </div>
+            </div>
 
-      <div className="info-item">
-        <FaEnvelope className="icon" />
-        <div>
-          <strong>support@colorlib.com</strong>
-          <p>Send us your query anytime!</p>
-        </div>
-      </div>
-    </div>
+            <div className="info-item">
+              <FaEnvelope className="icon" />
+              <div>
+                <strong>support@colorlib.com</strong>
+                <p>Send us your query anytime!</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>

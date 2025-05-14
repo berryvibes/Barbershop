@@ -19,35 +19,35 @@ const Navbar = () => {
           <img src={headpic} />
         </div>
         <nav className={`nav-container ${isOpen ? "is-active" : ""}`}>
-          <NavLink to="/" className="links">
+          <NavLink to="/" className="links" onClick={() => setIsOpen(false)} >
             Home
           </NavLink>
-          <NavLink to="/about" className="links">
+          <NavLink to="/About" className="links" onClick={() => setIsOpen(false)}>
             About
           </NavLink>
 
-          <NavLink to="/service" className="links">
+          <NavLink to="/Service" className="links" onClick={() => setIsOpen(false)}>
             Services
           </NavLink>
-          <NavLink to="/gallery" className="links">
+          <NavLink to="/gallery" className="links" onClick={() => setIsOpen(false)}>
             Gallery
           </NavLink>
           <div className="dropdown">
-            <NavLink to="/blogs" className="links">
+            <NavLink to="/blogs" className="links" onClick={() => setIsOpen(false)}>
               Blogs
             </NavLink>
 
             <div className="dropdown-content">
-              <NavLink to="/blogs" className="links">
+              <NavLink to="/blogs" className="links" onClick={() => setIsOpen(false)}>
                 Blogs
               </NavLink>
-              <NavLink to="/blogsdetails" className="links">
+              <NavLink to="/blogsdetails" className="links" onClick={() => setIsOpen(false)}>
                 Blog details
               </NavLink>
             </div>
           </div>
 
-          <NavLink to="/contact" className="links">
+          <NavLink to="/contact" className="links" onClick={() => setIsOpen(false)}>
             contact
           </NavLink>
           <button className="main-button">Free Quote</button>
